@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./js/jquery.backstretch.min.js"></script>
+<script src="./js/skrollr.min.js"></script>
+<link href="./default.css" rel="stylesheet">
+<link href="./linkstyles.css" rel="stylesheet">
+<link href="./src/css/lightbox.css" rel="stylesheet">
+
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="menu " data-0="height:20%" data-50="height:10%;">
+		<div class="menu_btn">
+			<span class="text"> <a href="./index.html" text="めいん"><img
+					src="./images/btn (1).png" /></a></span>
+		</div>
+		<div class="menu_btn">
+			<span class="text"><a href="./info.html" text="コラボカフェとはな～に？"><img
+					src="./images/btn (7).png" /></a></span>
+		</div>
+		<div class="menu_btn">
+			<span class="text"><a href="./Staff.html"><img
+					src="./images/btn (6).png" /></a></span>
+		</div>
+
+		<img src="logo.png" style="height: 100%; width: auto" />
+
+		<div class="menu_btn">
+			<span class="text"><a href="./gallery.html"><img src="./images/btn (5).png" /></a></span>
+		</div>
+		<div class="menu_btn">
+			<span class="text"><a href="./diary.html"><img src="./images/btn (4).png" /></a></span>
+		</div>
+		<div class="menu_btn">
+			<span class="text"><a href="./Event.html"><img src="./images/btn (3).png" /></a></span>
+		</div>
+	</div>
+	<div data-0="height:22%" data-50="height:10%;"></div>
+	<div class="main"></div>
+</body>
+<script>
+$('.logo').backstretch('logo.png');
+var t;
+window.onload = function() {
+	skrollr.init({
+		forceHeight : false
+	});
+	t= $('a:first').find('img').width();
+}
+
+</script>
+</html>
